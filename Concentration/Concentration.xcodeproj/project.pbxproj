@@ -13,6 +13,8 @@
 		4C5422CC2672716C00FD7B34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5422CA2672716C00FD7B34 /* Main.storyboard */; };
 		4C5422CE2672716D00FD7B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5422CD2672716D00FD7B34 /* Assets.xcassets */; };
 		4C5422D12672716D00FD7B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5422CF2672716D00FD7B34 /* LaunchScreen.storyboard */; };
+		4C5422DA26728A9900FD7B34 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5422D926728A9900FD7B34 /* Concentration.swift */; };
+		4C5422DC26728AEE00FD7B34 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5422DB26728AEE00FD7B34 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4C5422CD2672716D00FD7B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C5422D02672716D00FD7B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C5422D22672716D00FD7B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C5422D926728A9900FD7B34 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		4C5422DB26728AEE00FD7B34 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		4C5422C32672716C00FD7B34 /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
+				4C5422DD267295F900FD7B34 /* Model */,
 				4C5422C82672716C00FD7B34 /* ViewController.swift */,
 				4C5422CA2672716C00FD7B34 /* Main.storyboard */,
 				4C5422D82672726C00FD7B34 /* Supporting Files */,
@@ -73,6 +78,15 @@
 				4C5422CF2672716D00FD7B34 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C5422DD267295F900FD7B34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C5422D926728A9900FD7B34 /* Concentration.swift */,
+				4C5422DB26728AEE00FD7B34 /* Card.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5422C92672716C00FD7B34 /* ViewController.swift in Sources */,
+				4C5422DA26728A9900FD7B34 /* Concentration.swift in Sources */,
+				4C5422DC26728AEE00FD7B34 /* Card.swift in Sources */,
 				4C5422C52672716C00FD7B34 /* AppDelegate.swift in Sources */,
 				4C5422C72672716C00FD7B34 /* SceneDelegate.swift in Sources */,
 			);
