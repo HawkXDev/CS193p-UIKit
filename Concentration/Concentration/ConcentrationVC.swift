@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ConcentrationVC.swift
 //  Concentration
 //
 //  Created by Sergey Sokolkin on 10.06.21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConcentrationVC: UIViewController {
     
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
@@ -17,15 +17,31 @@ class ViewController: UIViewController {
     
     private(set) var flipCount = 0 {
         didSet {
-            flipCountLabel.text = "Flips: \(flipCount)"
+            updateFlipCountLabel()
         }
     }
     
-    private var emojiChoices = ["🐭", "🐱", "🐶", "🐸", "🦁", "🐷", "🐮", "🐵", "🐨"]
+    private func updateFlipCountLabel() {
+        let attributes: [NSAttributedString.Key: Any] = [
+            .strokeWidth: 5.0,
+            .strokeColor: #colorLiteral(red: 0.968627451, green: 0.8784313725, blue: 0.3568627451, alpha: 1)
+        ]
+        let attributedString = NSAttributedString(string: "Flips: \(flipCount)", attributes: attributes)
+        flipCountLabel.attributedText = attributedString
+        
+        
+        
+    }
     
-    private var emoji = [Int: String]()
+    private var emojiChoices = "🐭🐱🐶🐸🦁🐷🐮🐵🐨"
+    
+    private var emoji = [Card: String]()
 
-    @IBOutlet private weak var flipCountLabel: UILabel!
+    @IBOutlet private weak var flipCountLabel: UILabel! {
+        didSet {
+            updateFlipCountLabel()
+        }
+    }
     
     @IBOutlet private var cardButtons: [UIButton]!
     
@@ -56,11 +72,12 @@ class ViewController: UIViewController {
     }
     
     private func emoji(for card: Card) -> String {
-        if emoji[card.identifier] == nil, emojiChoices.count > 0 {
-            emoji[card.identifier] = emojiChoices.remove(at: emojiChoices.count.random)
+        if emoji[card] == nil, emojiChoices.count > 0 {
+            let randomStringIndex = emojiChoices.index(emojiChoices.startIndex, offsetBy: emojiChoices.count.random)
+            emoji[card] = String(emojiChoices.remove(at: randomStringIndex))
         }
         
-        return emoji[card.identifier] ?? "?"
+        return emoji[card] ?? "?"
     }
     
 }
