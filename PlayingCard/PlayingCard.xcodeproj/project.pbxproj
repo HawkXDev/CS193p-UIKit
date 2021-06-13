@@ -15,6 +15,7 @@
 		4C418C5326752F3A005F5A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C418C5126752F3A005F5A25 /* LaunchScreen.storyboard */; };
 		4C418C5C267530E0005F5A25 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C418C5B267530E0005F5A25 /* PlayingCard.swift */; };
 		4C418C5E2675353F005F5A25 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C418C5D2675353F005F5A25 /* PlayingCardDeck.swift */; };
+		4C418C602675E599005F5A25 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C418C5F2675E599005F5A25 /* PlayingCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4C418C5426752F3A005F5A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C418C5B267530E0005F5A25 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 		4C418C5D2675353F005F5A25 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
+		4C418C5F2675E599005F5A25 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				4C418C4A26752F37005F5A25 /* PlayingCardVC.swift */,
+				4C418C5F2675E599005F5A25 /* PlayingCardView.swift */,
 				4C418C4C26752F37005F5A25 /* Main.storyboard */,
 				4C418C5B267530E0005F5A25 /* PlayingCard.swift */,
 				4C418C5D2675353F005F5A25 /* PlayingCardDeck.swift */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C418C4B26752F37005F5A25 /* PlayingCardVC.swift in Sources */,
+				4C418C602675E599005F5A25 /* PlayingCardView.swift in Sources */,
 				4C418C4726752F37005F5A25 /* AppDelegate.swift in Sources */,
 				4C418C5E2675353F005F5A25 /* PlayingCardDeck.swift in Sources */,
 				4C418C5C267530E0005F5A25 /* PlayingCard.swift in Sources */,

@@ -19,30 +19,19 @@ struct PlayingCard: CustomStringConvertible {
     
     enum Suit: String, CustomStringConvertible {
         
-        var description: String {
-            return self.rawValue
-        }
-        
         case spades = "♠️"
         case hearts = "♥️"
         case clubs = "♣️"
         case diamonds = "♦️"
         
         static var all = [Suit.spades, .hearts, .diamonds, .clubs]
+        
+        var description: String {
+            return self.rawValue
+        }
     }
     
     enum Rank: CustomStringConvertible {
-        
-        var description: String {
-            switch self {
-            case .ace: return "Ace"
-            case .numeric(let pips): return "\(pips)"
-            case .face(let kind) where kind == "J": return "Jack"
-            case .face(let kind) where kind == "Q": return "Queen"
-            case .face(let kind) where kind == "K": return "King"
-            default: return ""
-            }
-        }
         
         case ace
         case face(String)
@@ -66,6 +55,17 @@ struct PlayingCard: CustomStringConvertible {
             }
             allRanks += [.face("J"), .face("Q"), .face("K")]
             return allRanks
+        }
+        
+        var description: String {
+            switch self {
+            case .ace: return "Ace"
+            case .numeric(let pips): return "\(pips)"
+            case .face(let kind) where kind == "J": return "Jack"
+            case .face(let kind) where kind == "Q": return "Queen"
+            case .face(let kind) where kind == "K": return "King"
+            default: return ""
+            }
         }
         
     }
