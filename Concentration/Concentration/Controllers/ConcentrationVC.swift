@@ -28,9 +28,6 @@ class ConcentrationVC: UIViewController {
         ]
         let attributedString = NSAttributedString(string: "Flips: \(flipCount)", attributes: attributes)
         flipCountLabel.attributedText = attributedString
-        
-        
-        
     }
     
     var theme: String? {
@@ -91,6 +88,16 @@ class ConcentrationVC: UIViewController {
     }
     
 }
+
+// MARK: - ThemeSelectionDelegate
+
+extension ConcentrationVC: ThemeSelectionDelegate {
+    func themeSelected(_ newTheme: String) {
+        theme = newTheme
+    }
+}
+
+// MARK: - Int Exteinsion
 
 extension Int {
     var random: Int {
