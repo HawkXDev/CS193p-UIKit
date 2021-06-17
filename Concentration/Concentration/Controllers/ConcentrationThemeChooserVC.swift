@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol ThemeSelectionDelegate: class {
+protocol ThemeSelectionDelegate: AnyObject {
     func themeSelected(_ newTheme: String)
 }
 
-class ConcentrationThemeChooserVC: UITableViewController {
+class ConcentrationThemeChooserVC: UITableViewController, UISplitViewControllerDelegate {
     
     weak var delegate: ThemeSelectionDelegate?
     
@@ -26,8 +26,14 @@ class ConcentrationThemeChooserVC: UITableViewController {
     
     let reuseIdentifier = "Cell"
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        splitViewController?.delegate = self
+    }
+    
+    @available(iOS 14.0, *)
+    func splitViewController(_ svc: UISplitViewController, topColumnForCollapsingToProposedTopColumn proposedTopColumn: UISplitViewController.Column) -> UISplitViewController.Column {
+        return .primary
     }
 
     // MARK: - Table View Methods
