@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C418C4726752F37005F5A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C418C4626752F37005F5A25 /* AppDelegate.swift */; };
-		4C418C4926752F37005F5A25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C418C4826752F37005F5A25 /* SceneDelegate.swift */; };
-		4C418C4B26752F37005F5A25 /* PlayingCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C418C4A26752F37005F5A25 /* PlayingCardVC.swift */; };
-		4C418C4E26752F37005F5A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C418C4C26752F37005F5A25 /* Main.storyboard */; };
-		4C418C5026752F3A005F5A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C418C4F26752F3A005F5A25 /* Assets.xcassets */; };
-		4C418C5326752F3A005F5A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C418C5126752F3A005F5A25 /* LaunchScreen.storyboard */; };
-		4C418C5C267530E0005F5A25 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C418C5B267530E0005F5A25 /* PlayingCard.swift */; };
-		4C418C5E2675353F005F5A25 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C418C5D2675353F005F5A25 /* PlayingCardDeck.swift */; };
-		4C418C602675E599005F5A25 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C418C5F2675E599005F5A25 /* PlayingCardView.swift */; };
+		8489478A2681C3080047B3BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848947892681C3080047B3BB /* AppDelegate.swift */; };
+		8489478C2681C3080047B3BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489478B2681C3080047B3BB /* SceneDelegate.swift */; };
+		8489478E2681C3080047B3BB /* PlayingCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489478D2681C3080047B3BB /* PlayingCardVC.swift */; };
+		848947912681C3080047B3BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8489478F2681C3080047B3BB /* Main.storyboard */; };
+		848947932681C30F0047B3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848947922681C30F0047B3BB /* Assets.xcassets */; };
+		848947962681C30F0047B3BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848947942681C30F0047B3BB /* LaunchScreen.storyboard */; };
+		848947A12681C4DF0047B3BB /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848947A02681C4DF0047B3BB /* PlayingCardView.swift */; };
+		848947A42681C4F50047B3BB /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848947A32681C4F50047B3BB /* PlayingCard.swift */; };
+		848947A82681C50B0047B3BB /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848947A72681C50B0047B3BB /* PlayingCardDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C418C4326752F37005F5A25 /* PlayingCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C418C4626752F37005F5A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C418C4826752F37005F5A25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C418C4A26752F37005F5A25 /* PlayingCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardVC.swift; sourceTree = "<group>"; };
-		4C418C4D26752F37005F5A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4C418C4F26752F3A005F5A25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C418C5226752F3A005F5A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4C418C5426752F3A005F5A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C418C5B267530E0005F5A25 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
-		4C418C5D2675353F005F5A25 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
-		4C418C5F2675E599005F5A25 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
+		848947862681C3080047B3BB /* AnimationCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		848947892681C3080047B3BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8489478B2681C3080047B3BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8489478D2681C3080047B3BB /* PlayingCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardVC.swift; sourceTree = "<group>"; };
+		848947902681C3080047B3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		848947922681C30F0047B3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		848947952681C30F0047B3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		848947972681C30F0047B3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848947A02681C4DF0047B3BB /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
+		848947A32681C4F50047B3BB /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		848947A72681C50B0047B3BB /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C418C4026752F37005F5A25 /* Frameworks */ = {
+		848947832681C3080047B3BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,43 +43,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C418C3A26752F37005F5A25 = {
+		8489477D2681C3080047B3BB = {
 			isa = PBXGroup;
 			children = (
-				4C418C4526752F37005F5A25 /* PlayingCard */,
-				4C418C4426752F37005F5A25 /* Products */,
+				848947882681C3080047B3BB /* AnimationCards */,
+				848947872681C3080047B3BB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4C418C4426752F37005F5A25 /* Products */ = {
+		848947872681C3080047B3BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C418C4326752F37005F5A25 /* PlayingCard.app */,
+				848947862681C3080047B3BB /* AnimationCards.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C418C4526752F37005F5A25 /* PlayingCard */ = {
+		848947882681C3080047B3BB /* AnimationCards */ = {
 			isa = PBXGroup;
 			children = (
-				4C418C4A26752F37005F5A25 /* PlayingCardVC.swift */,
-				4C418C5F2675E599005F5A25 /* PlayingCardView.swift */,
-				4C418C4C26752F37005F5A25 /* Main.storyboard */,
-				4C418C5B267530E0005F5A25 /* PlayingCard.swift */,
-				4C418C5D2675353F005F5A25 /* PlayingCardDeck.swift */,
-				4C418C4F26752F3A005F5A25 /* Assets.xcassets */,
-				4C418C5A26753031005F5A25 /* Supporting Files */,
-				4C418C5426752F3A005F5A25 /* Info.plist */,
+				8489478D2681C3080047B3BB /* PlayingCardVC.swift */,
+				848947A02681C4DF0047B3BB /* PlayingCardView.swift */,
+				8489478F2681C3080047B3BB /* Main.storyboard */,
+				848947A32681C4F50047B3BB /* PlayingCard.swift */,
+				848947A72681C50B0047B3BB /* PlayingCardDeck.swift */,
+				848947922681C30F0047B3BB /* Assets.xcassets */,
+				8489479E2681C3570047B3BB /* Supporting Files */,
+				848947972681C30F0047B3BB /* Info.plist */,
 			);
-			path = PlayingCard;
+			path = AnimationCards;
 			sourceTree = "<group>";
 		};
-		4C418C5A26753031005F5A25 /* Supporting Files */ = {
+		8489479E2681C3570047B3BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4C418C4626752F37005F5A25 /* AppDelegate.swift */,
-				4C418C4826752F37005F5A25 /* SceneDelegate.swift */,
-				4C418C5126752F3A005F5A25 /* LaunchScreen.storyboard */,
+				848947892681C3080047B3BB /* AppDelegate.swift */,
+				8489478B2681C3080047B3BB /* SceneDelegate.swift */,
+				848947942681C30F0047B3BB /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -87,39 +87,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C418C4226752F37005F5A25 /* PlayingCard */ = {
+		848947852681C3080047B3BB /* AnimationCards */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C418C5726752F3A005F5A25 /* Build configuration list for PBXNativeTarget "PlayingCard" */;
+			buildConfigurationList = 8489479A2681C30F0047B3BB /* Build configuration list for PBXNativeTarget "AnimationCards" */;
 			buildPhases = (
-				4C418C3F26752F37005F5A25 /* Sources */,
-				4C418C4026752F37005F5A25 /* Frameworks */,
-				4C418C4126752F37005F5A25 /* Resources */,
+				848947822681C3080047B3BB /* Sources */,
+				848947832681C3080047B3BB /* Frameworks */,
+				848947842681C3080047B3BB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PlayingCard;
-			productName = PlayingCard;
-			productReference = 4C418C4326752F37005F5A25 /* PlayingCard.app */;
+			name = AnimationCards;
+			productName = AnimationCards;
+			productReference = 848947862681C3080047B3BB /* AnimationCards.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4C418C3B26752F37005F5A25 /* Project object */ = {
+		8489477E2681C3080047B3BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Siarhei Sakolkin";
 				TargetAttributes = {
-					4C418C4226752F37005F5A25 = {
-						CreatedOnToolsVersion = 12.5;
+					848947852681C3080047B3BB = {
+						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = 4C418C3E26752F37005F5A25 /* Build configuration list for PBXProject "PlayingCard" */;
+			buildConfigurationList = 848947812681C3080047B3BB /* Build configuration list for PBXProject "AnimationCards" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,58 +127,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 4C418C3A26752F37005F5A25;
-			productRefGroup = 4C418C4426752F37005F5A25 /* Products */;
+			mainGroup = 8489477D2681C3080047B3BB;
+			productRefGroup = 848947872681C3080047B3BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C418C4226752F37005F5A25 /* PlayingCard */,
+				848947852681C3080047B3BB /* AnimationCards */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4C418C4126752F37005F5A25 /* Resources */ = {
+		848947842681C3080047B3BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C418C5326752F3A005F5A25 /* LaunchScreen.storyboard in Resources */,
-				4C418C5026752F3A005F5A25 /* Assets.xcassets in Resources */,
-				4C418C4E26752F37005F5A25 /* Main.storyboard in Resources */,
+				848947962681C30F0047B3BB /* LaunchScreen.storyboard in Resources */,
+				848947932681C30F0047B3BB /* Assets.xcassets in Resources */,
+				848947912681C3080047B3BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4C418C3F26752F37005F5A25 /* Sources */ = {
+		848947822681C3080047B3BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C418C4B26752F37005F5A25 /* PlayingCardVC.swift in Sources */,
-				4C418C602675E599005F5A25 /* PlayingCardView.swift in Sources */,
-				4C418C4726752F37005F5A25 /* AppDelegate.swift in Sources */,
-				4C418C5E2675353F005F5A25 /* PlayingCardDeck.swift in Sources */,
-				4C418C5C267530E0005F5A25 /* PlayingCard.swift in Sources */,
-				4C418C4926752F37005F5A25 /* SceneDelegate.swift in Sources */,
+				848947A42681C4F50047B3BB /* PlayingCard.swift in Sources */,
+				8489478E2681C3080047B3BB /* PlayingCardVC.swift in Sources */,
+				848947A12681C4DF0047B3BB /* PlayingCardView.swift in Sources */,
+				848947A82681C50B0047B3BB /* PlayingCardDeck.swift in Sources */,
+				8489478A2681C3080047B3BB /* AppDelegate.swift in Sources */,
+				8489478C2681C3080047B3BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4C418C4C26752F37005F5A25 /* Main.storyboard */ = {
+		8489478F2681C3080047B3BB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C418C4D26752F37005F5A25 /* Base */,
+				848947902681C3080047B3BB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4C418C5126752F3A005F5A25 /* LaunchScreen.storyboard */ = {
+		848947942681C30F0047B3BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C418C5226752F3A005F5A25 /* Base */,
+				848947952681C30F0047B3BB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -186,7 +186,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4C418C5526752F3A005F5A25 /* Debug */ = {
+		848947982681C30F0047B3BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,7 +237,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -247,7 +247,7 @@
 			};
 			name = Debug;
 		};
-		4C418C5626752F3A005F5A25 /* Release */ = {
+		848947992681C30F0047B3BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -302,40 +302,38 @@
 			};
 			name = Release;
 		};
-		4C418C5826752F3A005F5A25 /* Debug */ = {
+		8489479B2681C30F0047B3BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FCLAQVBB9;
-				INFOPLIST_FILE = PlayingCard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				INFOPLIST_FILE = AnimationCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sokolserg.PlayingCard;
+				PRODUCT_BUNDLE_IDENTIFIER = sokol.AnimationCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4C418C5926752F3A005F5A25 /* Release */ = {
+		8489479C2681C30F0047B3BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FCLAQVBB9;
-				INFOPLIST_FILE = PlayingCard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				INFOPLIST_FILE = AnimationCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sokolserg.PlayingCard;
+				PRODUCT_BUNDLE_IDENTIFIER = sokol.AnimationCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,25 +343,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C418C3E26752F37005F5A25 /* Build configuration list for PBXProject "PlayingCard" */ = {
+		848947812681C3080047B3BB /* Build configuration list for PBXProject "AnimationCards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C418C5526752F3A005F5A25 /* Debug */,
-				4C418C5626752F3A005F5A25 /* Release */,
+				848947982681C30F0047B3BB /* Debug */,
+				848947992681C30F0047B3BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C418C5726752F3A005F5A25 /* Build configuration list for PBXNativeTarget "PlayingCard" */ = {
+		8489479A2681C30F0047B3BB /* Build configuration list for PBXNativeTarget "AnimationCards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C418C5826752F3A005F5A25 /* Debug */,
-				4C418C5926752F3A005F5A25 /* Release */,
+				8489479B2681C30F0047B3BB /* Debug */,
+				8489479C2681C30F0047B3BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4C418C3B26752F37005F5A25 /* Project object */;
+	rootObject = 8489477E2681C3080047B3BB /* Project object */;
 }
