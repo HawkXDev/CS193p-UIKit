@@ -12,15 +12,19 @@ protocol ThemeSelectionDelegate: AnyObject {
     func themeSelected(_ newTheme: String)
 }
 
-class ConcentrationThemeChooserVC: UITableViewController, UISplitViewControllerDelegate {
+class ConcentrationThemeChooserVC: VCLLoggingTableVC, UISplitViewControllerDelegate {
+    
+    override var vclLoggingName: String {
+        return "ThemeChooser"
+    }
     
     weak var delegate: ThemeSelectionDelegate?
     
     let themes = [
-        "Sports": "⚽️🏀🏈⚾️🥎🎾🏐🏉🥏🎱🪀🏓🏸🏒🏑",
+        "Sports": "⚽️🏀🏈⚾️🥎🎾🏐🏉🥏🎱🪀🏓🏸🏒",
         "Halloween": "💀👻👽🧙🧛🧟🦇🕷🕸🛸🎃🎭🗡⚰",
-        "Faces": "😀😂😅😉😊😎😍😘🤔🤨🙄😣😥😮🤐😴🤓",
-        "Animals": "🐵🐶🦊🐱🦁🐯🐮🐷🐭🐹🐰🐻🐨🐼🐥"
+        "Faces": "😀😂😅😉😊😎😍😘🤔🤨🙄😣😥😮",
+        "Animals": "🐵🐶🦊🐱🦁🐯🐮🐷🐭🐹🐰🐻🐨🐼"
     ]
     lazy var themeNames = [String](themes.keys).sorted()
     

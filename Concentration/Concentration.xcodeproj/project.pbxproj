@@ -16,6 +16,7 @@
 		4C5422DA26728A9900FD7B34 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5422D926728A9900FD7B34 /* Concentration.swift */; };
 		4C5422DC26728AEE00FD7B34 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5422DB26728AEE00FD7B34 /* Card.swift */; };
 		8421C417267B7E2200E5B922 /* ConcentrationThemeChooserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421C416267B7E2200E5B922 /* ConcentrationThemeChooserVC.swift */; };
+		84D8A00226833CD900D51012 /* VCLLoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8A00126833CD900D51012 /* VCLLoggingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4C5422D926728A9900FD7B34 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		4C5422DB26728AEE00FD7B34 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		8421C416267B7E2200E5B922 /* ConcentrationThemeChooserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationThemeChooserVC.swift; sourceTree = "<group>"; };
+		84D8A00126833CD900D51012 /* VCLLoggingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCLLoggingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				4C5422CA2672716C00FD7B34 /* Main.storyboard */,
 				4C5422D82672726C00FD7B34 /* Supporting Files */,
 				4C5422D22672716D00FD7B34 /* Info.plist */,
+				84D8A00126833CD900D51012 /* VCLLoggingViewController.swift */,
 			);
 			path = Concentration;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D8A00226833CD900D51012 /* VCLLoggingViewController.swift in Sources */,
 				4C5422C92672716C00FD7B34 /* ConcentrationVC.swift in Sources */,
 				8421C417267B7E2200E5B922 /* ConcentrationThemeChooserVC.swift in Sources */,
 				4C5422DA26728A9900FD7B34 /* Concentration.swift in Sources */,
