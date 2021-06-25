@@ -16,17 +16,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m0H-3I-lqY">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nF7-QF-lQ8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="896" translatesAutoresizingMaskIntoConstraints="NO" id="m0H-3I-lqY">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="m0H-3I-lqY" firstAttribute="top" secondItem="nF7-QF-lQ8" secondAttribute="top" id="IIu-C0-Pxl"/>
+                                    <constraint firstAttribute="bottom" secondItem="m0H-3I-lqY" secondAttribute="bottom" id="fMg-tr-DU2"/>
+                                    <constraint firstItem="m0H-3I-lqY" firstAttribute="trailing" secondItem="nF7-QF-lQ8" secondAttribute="trailing" id="g0j-fH-pUL"/>
+                                    <constraint firstItem="m0H-3I-lqY" firstAttribute="leading" secondItem="nF7-QF-lQ8" secondAttribute="leading" id="uAl-6c-WbD"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="3oX-bK-TCk"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="J14-nX-Duc"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jFq-LQ-qaA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="m0H-3I-lqY" firstAttribute="leading" secondItem="Wdl-Np-BDq" secondAttribute="leading" id="19l-nW-Jcu"/>
-                            <constraint firstItem="m0H-3I-lqY" firstAttribute="top" secondItem="Wdl-Np-BDq" secondAttribute="top" id="8DX-Y4-V9p"/>
-                            <constraint firstItem="m0H-3I-lqY" firstAttribute="trailing" secondItem="Wdl-Np-BDq" secondAttribute="trailing" id="chF-lf-Ckq"/>
-                            <constraint firstAttribute="bottom" secondItem="m0H-3I-lqY" secondAttribute="bottom" id="sGl-C2-rCI"/>
+                            <constraint firstItem="nF7-QF-lQ8" firstAttribute="trailing" secondItem="Wdl-Np-BDq" secondAttribute="trailing" id="4aQ-qe-2Z4"/>
+                            <constraint firstItem="nF7-QF-lQ8" firstAttribute="top" secondItem="Wdl-Np-BDq" secondAttribute="top" id="Tz9-6T-cAC"/>
+                            <constraint firstAttribute="bottom" secondItem="nF7-QF-lQ8" secondAttribute="bottom" id="ggc-pb-nQm"/>
+                            <constraint firstItem="nF7-QF-lQ8" firstAttribute="leading" secondItem="Wdl-Np-BDq" secondAttribute="leading" id="leu-MC-tlF"/>
                         </constraints>
                     </view>
                     <connections>
