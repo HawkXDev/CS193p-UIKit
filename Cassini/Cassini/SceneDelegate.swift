@@ -19,8 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
               let detailViewController = (splitViewController.viewControllers.last as? UINavigationController)?.topViewController as? ImageViewController
         else { fatalError() }
         
-        let firstImageURL = DemoURLs.NASA["Cassini"]
-        detailViewController.imageURL = firstImageURL
+//        let firstImageURL = DemoURLs.NASA["Cassini"]
+//        detailViewController.imageURL = firstImageURL
 
         masterViewController.delegate = detailViewController
     }

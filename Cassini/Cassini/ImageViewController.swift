@@ -28,7 +28,7 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
             imageView.image = newValue
             
             imageView.sizeToFit()
-            scrollView.contentSize = imageView.frame.size
+            scrollView?.contentSize = imageView.frame.size
         }
     }
     
@@ -77,7 +77,8 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
 // MARK: - ImageSelectionDelegate
 
 extension ImageViewController: ImageSelectionDelegate {
-    func imageSelected(_ newImageURL: URL) {
-        
+    func imageURLSelected(_ newImageURL: URL, title: String) {
+        imageURL = newImageURL
+        self.title = title
     }
 }
