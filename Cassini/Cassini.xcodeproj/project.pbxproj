@@ -15,6 +15,7 @@
 		847291252685DE8E0078992C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847291242685DE8E0078992C /* ImageViewController.swift */; };
 		8472912A2685E5380078992C /* DemoURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847291282685E5380078992C /* DemoURLs.swift */; };
 		8472912B2685E5380078992C /* oval.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 847291292685E5380078992C /* oval.jpg */; };
+		8482956A268A0A6D004D68D7 /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84829569268A0A6D004D68D7 /* CassiniViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		847291242685DE8E0078992C /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		847291282685E5380078992C /* DemoURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURLs.swift; sourceTree = "<group>"; };
 		847291292685E5380078992C /* oval.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oval.jpg; sourceTree = "<group>"; };
+		84829569268A0A6D004D68D7 /* CassiniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,9 @@
 		8472910B2685DD940078992C /* Cassini */ = {
 			isa = PBXGroup;
 			children = (
+				8472910C2685DD940078992C /* AppDelegate.swift */,
+				8472910E2685DD940078992C /* SceneDelegate.swift */,
+				84829569268A0A6D004D68D7 /* CassiniViewController.swift */,
 				847291242685DE8E0078992C /* ImageViewController.swift */,
 				847291122685DD940078992C /* Main.storyboard */,
 				847291282685E5380078992C /* DemoURLs.swift */,
@@ -73,8 +78,6 @@
 		847291212685DDFE0078992C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8472910C2685DD940078992C /* AppDelegate.swift */,
-				8472910E2685DD940078992C /* SceneDelegate.swift */,
 				847291152685DD9B0078992C /* Assets.xcassets */,
 				847291172685DD9B0078992C /* LaunchScreen.storyboard */,
 			);
@@ -156,6 +159,7 @@
 				8472912A2685E5380078992C /* DemoURLs.swift in Sources */,
 				8472910D2685DD940078992C /* AppDelegate.swift in Sources */,
 				847291252685DE8E0078992C /* ImageViewController.swift in Sources */,
+				8482956A268A0A6D004D68D7 /* CassiniViewController.swift in Sources */,
 				8472910F2685DD940078992C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

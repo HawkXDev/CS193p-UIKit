@@ -73,3 +73,11 @@ class ImageViewController: UIViewController, UIScrollViewDelegate {
     }
     
 }
+
+// MARK: - ImageSelectionDelegate
+
+extension ImageViewController: ImageSelectionDelegate {
+    func imageSelected(_ newImageURL: URL) {
+        
+    }
+}
