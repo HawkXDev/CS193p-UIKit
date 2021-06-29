@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="52B-z6-95L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="52B-z6-95L">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0Wu-Nn-J8Q">
-                                <rect key="frame" x="144.5" y="350" width="125" height="196"/>
+                                <rect key="frame" x="144.5" y="377" width="125" height="196"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h0-4P-qcd">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="60"/>
@@ -50,8 +50,8 @@
                         <viewLayoutGuide key="safeArea" id="3v4-3v-ETW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0Wu-Nn-J8Q" firstAttribute="centerX" secondItem="Iz7-IK-axb" secondAttribute="centerX" id="FKI-nB-Igy"/>
-                            <constraint firstItem="0Wu-Nn-J8Q" firstAttribute="centerY" secondItem="Iz7-IK-axb" secondAttribute="centerY" id="ged-wI-2Em"/>
+                            <constraint firstItem="0Wu-Nn-J8Q" firstAttribute="centerX" secondItem="3v4-3v-ETW" secondAttribute="centerX" id="FKI-nB-Igy"/>
+                            <constraint firstItem="0Wu-Nn-J8Q" firstAttribute="centerY" secondItem="3v4-3v-ETW" secondAttribute="centerY" id="ged-wI-2Em"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="x29-y1-75H"/>
@@ -63,7 +63,7 @@
         <!--Split View Controller-->
         <scene sceneID="3Sy-K0-5VA">
             <objects>
-                <splitViewController allowDoubleColumnStyle="YES" id="52B-z6-95L" sceneMemberID="viewController">
+                <splitViewController allowDoubleColumnStyle="YES" preferredDisplayMode="beside" id="52B-z6-95L" sceneMemberID="viewController">
                     <connections>
                         <segue destination="QDE-5i-Fhg" kind="relationship" relationship="detailViewController" id="Yon-r5-6xq"/>
                         <segue destination="CJL-ny-UsM" kind="relationship" relationship="masterViewController" id="ZZ2-Rf-Pcf"/>
@@ -86,18 +86,25 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="3oX-bK-TCk"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="J14-nX-Duc"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="mO6-DW-9s8">
+                                <rect key="frame" x="188.5" y="456.5" width="37" height="37"/>
+                                <color key="color" systemColor="systemBlueColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jFq-LQ-qaA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nF7-QF-lQ8" firstAttribute="trailing" secondItem="Wdl-Np-BDq" secondAttribute="trailing" id="4aQ-qe-2Z4"/>
+                            <constraint firstItem="mO6-DW-9s8" firstAttribute="centerY" secondItem="jFq-LQ-qaA" secondAttribute="centerY" id="Cg1-H4-QSR"/>
                             <constraint firstItem="nF7-QF-lQ8" firstAttribute="top" secondItem="Wdl-Np-BDq" secondAttribute="top" id="Tz9-6T-cAC"/>
+                            <constraint firstItem="mO6-DW-9s8" firstAttribute="centerX" secondItem="jFq-LQ-qaA" secondAttribute="centerX" id="dK4-Lm-PTs"/>
                             <constraint firstAttribute="bottom" secondItem="nF7-QF-lQ8" secondAttribute="bottom" id="ggc-pb-nQm"/>
                             <constraint firstItem="nF7-QF-lQ8" firstAttribute="leading" secondItem="Wdl-Np-BDq" secondAttribute="leading" id="leu-MC-tlF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="nF7-QF-lQ8" id="tb3-9L-l2H"/>
+                        <outlet property="spinner" destination="mO6-DW-9s8" id="KOc-fP-Dfo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKs-0b-aVr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -126,6 +133,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
