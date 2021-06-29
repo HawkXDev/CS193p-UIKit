@@ -18,8 +18,8 @@ struct DemoURLs {
     static var NASA: Dictionary<String,URL> = {
         let NASAURLStrings = [
             "Cassini" : "https://www.nasa.gov/sites/default/files/thumbnails/image/cassini20190117-nasa.jpg",
-            "Earth" : "https://www.nasa.gov/sites/default/files/wave_earth_mosaic_3.jpg",
-            "Saturn" : "https://www.nasa.gov/sites/default/files/saturn_collage.jpg"
+            "Earth" : "https://www.nasa.gov/centers/goddard/images/content/638831main_globe_east_2048.jpg",
+            "Saturn" : "https://solarsystem.nasa.gov/system/stellar_items/image_files/38_saturn_1600x900.jpg"
         ]
         var urls = Dictionary<String,URL>()
         for (key, value) in NASAURLStrings {
