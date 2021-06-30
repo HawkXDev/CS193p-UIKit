@@ -10,6 +10,8 @@ Developing Apps for iOS with UIKit framework
 
 ## Cassini
 
+## EmojiArt
+
 ## Using
 
 - Stanford University's course CS193p
@@ -20,3 +22,4 @@ Developing Apps for iOS with UIKit framework
 - Drawing
 - Animation
 - Multithreading
+- Drag & Drop
