@@ -14,6 +14,7 @@
 		843BCE49268C981500FEB62C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BCE47268C981500FEB62C /* LaunchScreen.storyboard */; };
 		843BCE55268C9A8200FEB62C /* EmojiArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BCE54268C9A8200FEB62C /* EmojiArtViewController.swift */; };
 		843BCE58268C9AF600FEB62C /* EmojiArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BCE57268C9AF600FEB62C /* EmojiArtView.swift */; };
+		843BCE5C268CA1D800FEB62C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BCE5B268CA1D800FEB62C /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		843BCE4A268C981500FEB62C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843BCE54268C9A8200FEB62C /* EmojiArtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtViewController.swift; sourceTree = "<group>"; };
 		843BCE57268C9AF600FEB62C /* EmojiArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtView.swift; sourceTree = "<group>"; };
+		843BCE5B268CA1D800FEB62C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				843BCE42268C980C00FEB62C /* Main.storyboard */,
 				843BCE57268C9AF600FEB62C /* EmojiArtView.swift */,
 				843BCE54268C9A8200FEB62C /* EmojiArtViewController.swift */,
+				843BCE5B268CA1D800FEB62C /* Utilities.swift */,
 				843BCE51268C9A3000FEB62C /* Supporting Files */,
 				843BCE4A268C981500FEB62C /* Info.plist */,
 			);
@@ -152,6 +155,7 @@
 				843BCE3D268C980C00FEB62C /* AppDelegate.swift in Sources */,
 				843BCE55268C9A8200FEB62C /* EmojiArtViewController.swift in Sources */,
 				843BCE3F268C980C00FEB62C /* SceneDelegate.swift in Sources */,
+				843BCE5C268CA1D800FEB62C /* Utilities.swift in Sources */,
 				843BCE58268C9AF600FEB62C /* EmojiArtView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
