@@ -15,11 +15,8 @@ Developing Apps for iOS with UIKit framework
 ## Using
 
 - Stanford University's course CS193p
-- Xcode 12.5
-- Swift 5
-- UIKit
-- MVC
-- Drawing
-- Animation
+- Xcode 12.5, Swift 5
+- UIKit, MVC
+- Drawing, Animation
 - Multithreading
-- Drag & Drop
+- Drag & Drop, TableView, CollectionView
