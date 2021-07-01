@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8410CF66268DD1E80067D37E /* EmojiArtDocumentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410CF65268DD1E70067D37E /* EmojiArtDocumentTableViewController.swift */; };
 		843BCE3D268C980C00FEB62C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BCE3C268C980C00FEB62C /* AppDelegate.swift */; };
 		843BCE3F268C980C00FEB62C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BCE3E268C980C00FEB62C /* SceneDelegate.swift */; };
 		843BCE44268C980C00FEB62C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BCE42268C980C00FEB62C /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8410CF65268DD1E70067D37E /* EmojiArtDocumentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentTableViewController.swift; sourceTree = "<group>"; };
 		843BCE39268C980C00FEB62C /* EmojiArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843BCE3C268C980C00FEB62C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		843BCE3E268C980C00FEB62C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				843BCE42268C980C00FEB62C /* Main.storyboard */,
 				843BCE57268C9AF600FEB62C /* EmojiArtView.swift */,
 				843BCE54268C9A8200FEB62C /* EmojiArtViewController.swift */,
+				8410CF65268DD1E70067D37E /* EmojiArtDocumentTableViewController.swift */,
 				843BCE5B268CA1D800FEB62C /* Utilities.swift */,
 				843BCE51268C9A3000FEB62C /* Supporting Files */,
 				843BCE4A268C981500FEB62C /* Info.plist */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				843BCE3D268C980C00FEB62C /* AppDelegate.swift in Sources */,
+				8410CF66268DD1E80067D37E /* EmojiArtDocumentTableViewController.swift in Sources */,
 				843BCE55268C9A8200FEB62C /* EmojiArtViewController.swift in Sources */,
 				843BCE3F268C980C00FEB62C /* SceneDelegate.swift in Sources */,
 				843BCE5C268CA1D800FEB62C /* Utilities.swift in Sources */,
