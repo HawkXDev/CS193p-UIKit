@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ecc-SL-QxL">
-    <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <device id="ipad10_2" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,23 +13,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="EmojiArtViewController" customModule="EmojiArt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="791.5" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="759.5" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qz6-TB-Cgq">
-                                <rect key="frame" x="0.0" y="50" width="791.5" height="784"/>
+                                <rect key="frame" x="0.0" y="50" width="759.5" height="760"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AlT-IJ-apJ" customClass="EmojiArtView" customModule="EmojiArt" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="791.5" height="784"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
+                                    <scrollView verifyAmbiguity="off" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIr-bz-7Fg">
+                                        <rect key="frame" x="0.0" y="0.0" width="760" height="760"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="250" constant="760" id="9mf-0A-fxJ"/>
+                                            <constraint firstAttribute="height" priority="250" constant="760" id="fPS-z8-WXw"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="XyT-ih-AkU"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="yBQ-9h-Iqt"/>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="AlT-IJ-apJ" secondAttribute="trailing" id="0Bp-Mf-HSi"/>
-                                    <constraint firstItem="AlT-IJ-apJ" firstAttribute="top" secondItem="qz6-TB-Cgq" secondAttribute="top" id="Hrk-25-az4"/>
-                                    <constraint firstItem="AlT-IJ-apJ" firstAttribute="leading" secondItem="qz6-TB-Cgq" secondAttribute="leading" id="lVF-TJ-BAd"/>
-                                    <constraint firstAttribute="bottom" secondItem="AlT-IJ-apJ" secondAttribute="bottom" id="wKe-Lb-haE"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aIr-bz-7Fg" secondAttribute="trailing" id="LBh-45-K4r"/>
+                                    <constraint firstItem="aIr-bz-7Fg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qz6-TB-Cgq" secondAttribute="leading" id="YIq-Bq-qLm"/>
+                                    <constraint firstItem="aIr-bz-7Fg" firstAttribute="centerY" secondItem="qz6-TB-Cgq" secondAttribute="centerY" id="apf-Um-rK8"/>
+                                    <constraint firstItem="aIr-bz-7Fg" firstAttribute="centerX" secondItem="qz6-TB-Cgq" secondAttribute="centerX" id="b75-o8-x9Y"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aIr-bz-7Fg" secondAttribute="bottom" id="gOe-9v-QhZ"/>
+                                    <constraint firstItem="aIr-bz-7Fg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qz6-TB-Cgq" secondAttribute="top" id="lqC-n1-s2c"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -44,19 +51,19 @@
                     </view>
                     <connections>
                         <outlet property="dropZone" destination="qz6-TB-Cgq" id="WMI-zY-abI"/>
-                        <outlet property="emojiArtView" destination="AlT-IJ-apJ" id="JHc-SN-PAH"/>
+                        <outlet property="scrollView" destination="aIr-bz-7Fg" id="Rry-br-VoS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-978" y="1924"/>
+            <point key="canvasLocation" x="-978.33333333333326" y="1923.7037037037035"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="QmE-F7-pGD">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="7WH-oW-xFk" customClass="EmojiArtDocumentTableViewController" customModule="EmojiArt" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="an1-5h-0kR">
-                        <rect key="frame" x="0.0" y="0.0" width="420" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
