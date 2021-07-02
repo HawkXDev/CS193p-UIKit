@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="EmojiArtViewController" customModule="EmojiArt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="759.5" height="810"/>
+                        <rect key="frame" x="0.0" y="0.0" width="759" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qz6-TB-Cgq">
@@ -52,6 +52,8 @@
                     <connections>
                         <outlet property="dropZone" destination="qz6-TB-Cgq" id="WMI-zY-abI"/>
                         <outlet property="scrollView" destination="aIr-bz-7Fg" id="Rry-br-VoS"/>
+                        <outlet property="scrollViewHeight" destination="fPS-z8-WXw" id="AVE-UD-G8r"/>
+                        <outlet property="scrollViewWidth" destination="9mf-0A-fxJ" id="Ek8-gu-2zn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
