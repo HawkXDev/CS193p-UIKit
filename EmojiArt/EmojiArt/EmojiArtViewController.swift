@@ -9,7 +9,7 @@
 import UIKit
 
 class EmojiArtViewController: UIViewController, UIDropInteractionDelegate, UIScrollViewDelegate,
-                              UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+                              UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDragDelegate {
 
     @IBOutlet weak var dropZone: UIView! {
         didSet {
@@ -76,6 +76,7 @@ class EmojiArtViewController: UIViewController, UIDropInteractionDelegate, UIScr
         didSet {
             emojiCollectionView.dataSource = self
             emojiCollectionView.delegate = self
+            emojiCollectionView.dragDelegate = self
         }
     }
     
@@ -98,6 +99,23 @@ class EmojiArtViewController: UIViewController, UIDropInteractionDelegate, UIScr
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
+        return dragItems(at: indexPath)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session: UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem] {
+        return dragItems(at: indexPath)
+    }
+    
+    private func dragItems(at indexPath: IndexPath) -> [UIDragItem] {
+        if let attributedString = (emojiCollectionView.cellForItem(at: indexPath) as? EmojiCollectionViewCell)?.label.attributedText {
+            let dragItem = UIDragItem(itemProvider: NSItemProvider(object: attributedString))
+            dragItem.localObject = attributedString
+            return [dragItem]
+        } else {
+            return []
+        }
+    }
     
     
     var imageFetcher: ImageFetcher!
